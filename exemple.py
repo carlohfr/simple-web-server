@@ -7,12 +7,12 @@
 
 from simplewebserver import SimpleWebServer
 
+
 server = SimpleWebServer()
 
-
 def index(req, res):
-    res.send_page("index.html")
+    res.send_file("index.html")
 
 server.get("/", index)
 
-server.start(port=8000)
+server.start(port=8000, public_files_directory="public")
