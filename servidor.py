@@ -8,7 +8,7 @@ servidor.bind((IP, PORTA))                                    # Informa o IP e a
 servidor.listen(5)                                            # Numero maximo de maquinas que podem conectar.
 
 
-# Informações para o console
+
 print("Servidor iniciado...")
 print("Servidor na porta:",PORTA)
 print("Servidor no endreço:",IP)
